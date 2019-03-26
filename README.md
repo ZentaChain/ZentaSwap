@@ -19,6 +19,8 @@
 
 *inluded Erc20.abis ✔️
 
-*kyberNetworkProxy ✔️
+*KyberNetworkProxy ✔️
+
+*Metamask ✔️
 
 ````
