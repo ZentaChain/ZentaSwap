@@ -1,8 +1,6 @@
 ## :arrow_right: ZentaSwap :arrow_left:
 
-##### This project is under active development, there may be breaking changes.
-
-##### Almost done and testet on Ropsten Testnet & Mainnet - 25.03.2019 ✔️
+##### Done Mainnet - 25.03.2019 ✔️
 
 ````
 *Mobile view ✔️
