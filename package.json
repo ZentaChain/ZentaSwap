@@ -1,0 +1,25 @@
+{
+  "name": "ipfswap-master",
+  "version": "1.0.0",
+  "description": "ZentaSwap IPFS ETHEREUM...",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "emailjs": "^2.2.0",
+    "ethers": "^4.0.27",
+    "express": "^4.16.4",
+    "jquery": "^3.3.1",
+    "metamask-inpage-provider": "^2.0.1",
+    "node-fetch": "^2.3.0",
+    "node-metamask": "^1.1.1",
+    "popper.js": "^1.14.7",
+    "node.js":,
+    "yarn": "^1.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "sever node.js"
+  },
+  "author": "HarunKacemer",
+  "license": "ISC"
+}
