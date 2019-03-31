@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Favicon ENd -->
+
+    <!-- FB Metatags -->
+    <meta property="og:title" content="TRADE TOKENS WITH ZENTASWAP OVER IPFS">
+    <meta property="og:description" content="Swap ERC20 Tokens in the most decentralized way possible. Powered by Ethereum, hosted on IPFS and by KyberNetwork.">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+
+
+    <meta charset="UTF-8">
+    <!-- Mobile Rendering -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>TRADE TOKENS WITH ZENTASWAP OVER IPFS</title>
+    <meta name="description" content="ZentaSwap ERC20 Tokens in the most decentralized way possible. Powered by Ethereum, hosted on IPFS, KyberNetwork">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+
+    <!-- Bootstrap w/ Popper and Jquery -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Include web3.js here -->
+    <script language="javascript" type="text/javascript" src="javascript/kyber-network-proxi-abi.js"></script>
+    <script language="javascript" type="text/javascript" src="javascript/erc20-abi.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js" integrity="sha256-nWBTbvxhJgjslRyuAKJHK+XcZPlCnmIAAMixz6EefVk=" crossorigin="anonymous"></script>
+
+    <!-- Ethers.js library -->
+    <script charset="utf-8"
+          src="https://cdn.ethers.io/scripts/ethers-v4.min.js"
+          type="text/javascript">
+    </script>
+
+    <!-- Email js Library -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <!-- Logo -->
+      <a href="/" class="navbar-brand">
+        <img src="images/zentaswap_logo.png" alt="logo">
+      </a>
+
+      <div class="navbar-right hidden-s hidden-sm">
+        <div class="navbar-item">
+          <div class="dropdown dropdown-toggle" id="navbar-menu" data-toggle="dropdown">
+            <ul class="dropdown-menu dropdown-menu-right navbar-dropdown-menu">
+              <li><a href="#" id="networkSwitch"><span style="color: rgb (101, 101, 101);">Ropsten Testnet</span></a></li>
+            </ul>
+          <span style="color: rgb(62, 62, 62);">Mainnet
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- PAGE CONTENT -->
+
+    <div class="wrapper">
+      <div class="buffer-top">
+        <div class="modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h6 class="modal-title"><em>Please install Metamask</em></h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p><em>ZENTASWAP is a Web3 based Application</em></p>
+                <p><em>Please activate or install Metamask</em></p>
+              </div>
+              <div class="modal-footer">
+                <form id="metamask-form" action="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en" target="_blank">
+                    <button class="btn btn-secondary" id="metamask-button" type="submit" value="Metamask-plug-in">Install Metamask</button>
+                </form>
+                <!-- <a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en" class="btn btn-primary" id="metamask-button" target="_blank" type="button" >Install Metamask</a> -->
+                <button type="button" id="close-button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="container">
+
+        <!-- Title -->
+        <div class="row justify-content-md-center title">
+          <div class="col-md-auto text-center">
+            <h5>TRADE TOKENS WITH ZENTASWAP OVER IPFS</h5>
+          </div>
+        </div>
+
+        <!-- Swap Card Start -->
+        <div class="swap-card">
+          <form action="" id="trade-form">
+
+          <!-- Token Selection -->
+          <div class="row justify-content-md-center">
+            <div class="col-md-auto text-center swap-card-content">
+              <div class="dropdown" id="sell-card">
+                <div class="sell-title">
+                  <h5>FROM</h5>
+                </div>
+                <div class="token-content" id="sell-content">
+                  <img class="token-logo" id="sell-logo" onclick="SellFunction()" src="images/ethereum.png" alt="" >
+                  <h6 class="dropbtn" id="sell-button" onclick="SellFunction()">Ethereum - (ETH)</h6>
+                  <div class="max-token" id="sell-max-token"></div>
+                  <div id="sellDropdown" class="dropdown-content">
+                    <input class="searchFilter"type="text" placeholder="Search.." id="sellSearch">
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-auto text-center swap-image-parent">
+              <img class="swap-image" src="images/swap.png" alt="">
+            </div>
+
+            <div class="col-md-auto text-center swap-card-content">
+              <div class="dropdown" id="buy-card">
+                <div class="buy-title">
+                  <h5>TO</h5>
+                </div>
+                <div class="token-content" id="buy-content">
+                  <img class="token-logo" id="buy-logo" onclick="BuyFunction()" src="https://raw.githubusercontent.com/TrustWallet/tokens/master/tokens/0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359.png" alt="" onerror="this.onerror=null;this.src='images/no-image.png';">
+                  <h6 onclick="BuyFunction()" class="dropbtn" id="buy-button">DAI - (DAI)</h6>
+                  <div class="max-token"></div>
+                  <div id="buyDropdown" class="dropdown-content">
+                    <input class="searchFilter"type="text" placeholder="Search.." id="buySearch">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FORM TO SUBMIT VALUES -->
+
+            <div class="row justify-content-md-center">
+
+              <div class="col-md-auto text-center swap-card-content">
+
+                <!-- Div that contains input and h6 illustrating the tokens symbol -->
+                <div class="sell-input-content">
+                  <input class="form-control" id="src-amount" type="number" name="sell-amount" placeholder="0" onkeyup="sellExchangeRate()">
+                  <h6 class="input-symbol" id="sell-symbol">ETH</h6>
+                </div>
+
+              </div>
+              <div class="col-md-auto text-center">
+                <div class="empty-swap-image" alt=""></div>
+              </div>
+              <div class="col-md-auto text-center swap-card-content">
+
+
+                <div class="buy-input-content">
+                  <input class="form-control" id="dest-amount" type="text" name="buy-amount" placeholder="0" onkeyup="buyExchangeRate()">
+                  <h6 class="input-symbol" id="buy-symbol">DAI</h6>
+                </div>
+
+              </div>
+
+
+            </div>
+
+            <div class="row justify-content-md-center">
+              <div class="col-md-auto text-center swap-button-div">
+                <input class="btn btn-outline-light" id="swap-button" type="submit" value="SWAP">
+                <h6>Exchange Rate:</h6>
+                <div class="exchange-rate"></div>
+
+              </div>
+            </div>
+
+          </form>
+
+        <!-- Swap Card End -->
+        </div>
+
+        <div class="row justify-content-around credits">
+          <div class="col-md-auto text-center">
+              <div class="credit-item">
+                <img src="images/ipfs-logo-white.png" alt="ipfs-logo" height="60" width="100">
+
+              </div>
+          </div>
+
+          <div class="col-md-auto text-center">
+
+              <div class="credit-item">
+                <img src="images/zentachain-logo-white.png" alt="ipfs-logo" height="50" width="150">
+
+              </div>
+          </div>
+
+          <div class="col-md-auto text-center">
+
+              <div class="credit-item">
+
+                <img src="images/kyber-logo-white.png" alt="ipfs-logo" height="60" width="100">
+              </div>
+            </div>
+
+          </div>
+
+
+        <!-- Row end -->
+        </div>
+
+      </div>
+
+      <!-- Test END -->
+      </div>
+
+      <div class="push"></div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="footer-links">
+        <a href="https://zentachain.io" target="_blank">Made by Zentachain.io</a>
+      </div>
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <!-- Trade function -->
+    <script language="javascript" type="text/javascript" src="javascript/trade.js"></script>
+
+    <script language="javascript" type="text/javascript" src="javascript/modal-changes.js"></script>
+
+    <!-- Show available currencies-->
+    <script language="javascript" type="text/javascript" src="javascript/currencies.js"></script>
+
+    <!-- Get Expected Rates -->
+    <script language="javascript" type="text/javascript" src="javascript/get-expected-rate.js"></script>
+
+    <!-- Jquery, Popper.js and Bootstrap.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  </body>
+
+</html>
