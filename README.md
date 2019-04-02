@@ -1,6 +1,5 @@
 ## :arrow_right: ZentaSwap :arrow_left:
 
-##### Done Mainnet - 25.03.2019 ✔️
 
 ````
 *Mobile view ✔️
