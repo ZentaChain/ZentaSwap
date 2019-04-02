@@ -1,0 +1,259 @@
+@import 'select-currencies.css';
+@import 'navbar.css';
+@import 'footer.css';
+@import 'modal.css';
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background: transparent;
+}
+
+.wrapper {
+  background: linear-gradient(#fcfcfc, rgb(8, 135, 173));
+/*  background-image: url('../images/ocean.jpg'), linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%);
+*//*  background-color: #323c41;
+  background-image: url('images/ocean.jpg');
+*/  min-height: 100%;
+  /* From the web*/
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -40px;
+}
+
+.buffer-top {
+  background-color: inherit;
+}
+
+.container {
+  background-color: transparent;
+  padding-top: 40px;
+  color: rgb(27, 27, 27), 214, 0);
+}
+
+
+.buffer {
+  padding-top: 70px;
+}
+
+.title {
+  margin-right: 3em !important;
+  margin-left: 3em !important;
+  margin-bottom: 30px;
+  border-radius: 2px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.swap-card {
+  background-color: rgba(255, 255, 255, 0.2);
+/*  opacity: 0.9;
+*/ /* margin-right: 190px !important;
+  margin-left: 190px !important;*/
+  margin-right: 3em;
+  margin-left: 3em;
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px rgba(1, 1, 1, 0.3);
+  border: 1px solid rgba(250, 250, 250, 0.1);
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+#sell-card {
+/*  display: flex;
+*/
+  flex-direction: column;
+  width: 200px;
+}
+
+.sell-title {
+  align-self: baseline;
+  margin-top: 15px;
+}
+
+.sell-token-content {
+  margin-bottom: 10px;
+  background-color: inherit;
+}
+
+.token-content  {
+  height: 145px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  background-color: inherit;
+  /*new shit*/
+  border: 0 solid;
+  border-radius: 15px;
+  box-shadow: inset 0 0 20px rgba(247, 243, 243, 0);
+  /*outline: 1px solid;*/
+  outline-color: rgb(78, 78, 78);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/*HOVER THE SELL CONTENT*/
+/*/
+*/
+
+.token-content:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 50px rgba(255, 255, 255, 0.5), 0 0 20px rgba(253, 253, 253, 0.973);
+  outline-color: rgb(250, 249, 249);
+  outline-offset: 10px;
+  text-shadow: 1px 1px 2px #ffffff;
+}
+
+#buy-card {
+  flex-direction: column;
+  width: 200px;
+}
+
+.buy-title {
+  align-self: baseline;
+  margin-top: 15px;
+}
+
+.buy-token-content {
+  margin-bottom: 10px;
+  background-color: inherit;
+}
+
+/*Token name selection*/
+
+.dropbtn {
+  background-color: inherit;
+  color: rgb(26, 22, 22);
+}
+
+
+/*Input fields*/
+
+
+.sell-input-content {
+  display: flex;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.buy-input-content {
+  display: flex;
+  max-width: 200px;
+  margin: 0 auto
+}
+
+/*Amount input fields*/
+
+.form-control {
+  margin-top: 0.2rem;
+}
+
+#src-amount {
+  align-self: baseline;
+  border: none;
+  border-bottom: 2px solid rgb(78, 76, 76);
+  opacity: 1;
+  background-color: inherit;
+  border-radius: 0;
+  height: 30px;
+  color: rgb(78, 78, 78);
+}
+
+#dest-amount {
+  align-self: baseline;
+  border: none;
+  border-bottom: 2px solid rgb(78, 78, 78);
+  opacity: 1;
+  background-color: inherit;
+  border-radius: 0;
+  height: 30px;
+  color: rgb(78, 78, 78);
+}
+
+/*Input symbol*/
+.input-symbol {
+  align-self: baseline;
+  border-bottom: 2px solid rgb(78, 78, 78);
+  height: 25px;
+  font-weight: bold;
+}
+
+/*Swap Button*/
+
+#swap-button {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: rgba(101, 101, 101,);
+  font-weight: bold;
+  border: 2.4px solid rgb(73, 73, 73);
+  border-radius: .5px;
+  /*box-shadow:2px 2px white;*/
+  font-size: 1.2rem;
+}
+
+#swap-button:hover {
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow:0 0 0;
+/*  transform:translate(2px,2px);
+*/
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  box-shadow: inset 0 0 50px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+}
+
+
+/*CREDITS*/
+
+.credits {
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-top: 30px;
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px rgba(1, 1, 1, 0.3);
+  border: 1px solid rgba(250, 250, 250, 0.1);
+  padding-bottom: 10px;
+/*  margin-right: 20px !important;
+  margin-left: 20px !important;*/
+  margin-right: 3em !important;
+  margin-left: 3em !important;
+}
+
+
+.credit-item {
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+/*Make Token logos round*/
+
+.token-logo {
+  width: 120px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/*Swap Image*/
+
+.swap-image-parent {
+  min-height: 40px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.swap-image {
+  width: 2em;
+  height: 2em;
+}
+
+.swap-image:hover {
+  cursor: pointer;
+}
+
+.empty-swap-image {
+  width: 2em;
+  height: 2em;
+}
+
+
+

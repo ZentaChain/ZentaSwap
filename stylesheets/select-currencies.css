@@ -1,0 +1,83 @@
+/* Dropdown Button */
+.dropbtn {
+  background-color: rgba(253, 253, 253, 0.7);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+/*.dropbtn:hover, .dropbtn:focus {
+  background-color: rgba(140, 20, 252, 0.7);
+}*/
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  min-width: 160px;
+  box-shadow: 0px 14px 16px 0px rgba(58, 57, 57, 0.699);
+  z-index: 1;
+  max-height:400px;
+  overflow:scroll;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(17, 17, 17);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px white solid;
+}
+
+/* The search field */
+.searchFilter {
+  border-box: box-sizing;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+/*Name under logo*/
+#buy-button {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0px;
+}
+/*Name under logo*/
+#sell-button {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0px;
+}
+
+.max-token {
+  font-size: 12px;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+/* The search field when it gets focus/clicked on */
+#myInput:focus {outline: 2px solid rgb(255, 254, 254);}
+
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgb(243, 240, 240)}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
