@@ -1,5 +1,7 @@
 ## :arrow_right: ZentaSwap :arrow_left:
 
+#### TRADE TOKEN WITH ZENTASWAP OVER IPFS
+
 
 ````
 *Mobile view ✔️
@@ -19,5 +21,7 @@
 *KyberNetworkProxy ✔️
 
 *Metamask ✔️
+
+*Tor ❎
 
 ````
