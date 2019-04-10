@@ -23,4 +23,6 @@
 *Metamask ✔️
 
 *Tor routing protocol will be added in Q3 2019 ❎
+
+*Copyright all rights reserved Zentachain.io
 ````
