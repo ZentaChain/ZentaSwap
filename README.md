@@ -22,6 +22,5 @@
 
 *Metamask ✔️
 
-*Tor ❎
-
+*Tor routing protocol will be added in Q3 2019 ❎
 ````
