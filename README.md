@@ -1,6 +1,6 @@
 ## :arrow_right: ZentaSwap :arrow_left:
 
-[![Build Status](https://travis-ci.org/dwyl/esta.svg?branch=master)](zentachain.io)
+[![Build Status](https://travis-ci.org/dwyl/esta.svg?branch=master)](https://github.com/ZentaChain/ZentaSwap)
 
 #### TRADE TOKEN WITH ZENTASWAP OVER IPFS
 
