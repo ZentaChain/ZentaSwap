@@ -4,6 +4,8 @@
 
 #### TRADE TOKEN WITH ZENTASWAP OVER IPFS
 
+##### ZentaSwap is a process by which one cryptocurrency is exchanged for another. Unlike selling one coin to buy another, a token swap is the change of one coin for another.
+
 ##### *Mobile view ✔️
 
 ##### *Ropsten Network ✔️
