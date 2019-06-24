@@ -25,4 +25,10 @@
 
 - [x] dApp ✔️
 
+----
+
+````
+npm start
+````
+
 ##### *[Copyright all rights reserved * Zentachain.io 2019]
