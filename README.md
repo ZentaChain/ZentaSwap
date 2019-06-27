@@ -30,7 +30,7 @@
 ````
 npm install
 ````
-Than runit with:
+Than run it with:
 ````
 npm start
 ````
