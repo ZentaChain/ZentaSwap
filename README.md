@@ -28,6 +28,10 @@
 ----
 
 ````
+npm install
+````
+Than runit with:
+````
 npm start
 ````
 
