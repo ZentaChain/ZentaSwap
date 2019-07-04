@@ -44,7 +44,6 @@ git clone https://github.com/ZentaChain/ZentaSwap
 install required packages:
 ````
 npm install
-
 ````
 run with:
 ````
