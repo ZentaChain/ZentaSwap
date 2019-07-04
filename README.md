@@ -26,12 +26,24 @@
 - [x] dApp ✔️
 
 ----
+#### Prerequisites
 
+To setup the development environment for the project you will need the following:
 ````
+node
+npm
+Metamask
+````
+### Installing:
+
+#### clone the repository
+````
+git clone https://github.com/ZentaChain/ZentaSwap
+
 npm install
-````
+
 Than run it with:
-````
+
 npm start
 ````
 
