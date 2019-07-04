@@ -39,12 +39,20 @@ Metamask
 #### clone the repository
 ````
 git clone https://github.com/ZentaChain/ZentaSwap
+````
 
+install required packages:
+````
 npm install
 
-Than run it with:
-
+````
+run with:
+````
 npm start
 ````
+
+#### Built With:
+
+##### NPM - Package manager for JavaScript
 
 ##### *[Copyright all rights reserved * Zentachain.io 2019]
