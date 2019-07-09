@@ -30,9 +30,7 @@
 
 To setup the development environment for the project you will need the following:
 ````
-node
-npm
-Metamask
+Node.js npm and Metamask
 ````
 ### Installing:
 
