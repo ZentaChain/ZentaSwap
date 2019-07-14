@@ -41,11 +41,11 @@ git clone https://github.com/ZentaChain/ZentaSwap
 
 install required packages:
 ````sh
-npm install
+$ npm install
 ````
 run with:
 ````sh
-npm start
+$ npm start
 ````
 
 #### Built With:
