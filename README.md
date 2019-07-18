@@ -2,7 +2,7 @@
 
 ##### TRADE TOKEN WITH ZENTASWAP OVER IPFS
 
-##### ZentaSwap is a process by which one cryptocurrency is exchanged for another. Unlike selling one coin to buy another, a token swap is the change of one coin for another or token its runs over the IPFS.
+##### *ZentaSwap is a process by which one cryptocurrency is exchanged for another. Unlike selling one coin to buy another, a token swap* *is the change of one coin for another or token its runs over the IPFS.*
 
 
 - [x] Mobile view
@@ -26,15 +26,15 @@
 - [x] dApp
 
 ----
-#### Prerequisites
+#### *Prerequisites*
 
 To setup the development environment for the project you will need the following:
 ````
 Node.js npm and Metamask
 ````
-### Installing:
+#### *Installing:*
 
-#### clone the repository
+#### *Clone the repository*
 ```sh
 git clone https://github.com/ZentaChain/ZentaSwap
 ````
@@ -48,8 +48,8 @@ run with:
 $ npm start
 ````
 
-#### Built With:
+#### *Built With:*
 
-##### NPM - Package manager for JavaScript
+##### *NPM - Package manager for JavaScript*
 
-##### *[Copyright all rights reserved * Zentachain.io 2019]
+##### *[Copyright all rights reserved * Zentachain.io 2019]*
