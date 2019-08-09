@@ -25,6 +25,8 @@
 
 - [x] dApp
 
+- [x] Redesigned &&/Bug fixed 09.08.2019
+
 ----
 #### *Prerequisites*
 
