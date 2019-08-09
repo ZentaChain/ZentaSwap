@@ -13,7 +13,7 @@
     "node-fetch": "^2.3.0",
     "node-metamask": "^1.1.1",
     "popper.js": "^1.14.7",
-    "node.js":,
+    "node.js":"*",
     "yarn": "^1.13.0"
   },
   "devDependencies": {},
