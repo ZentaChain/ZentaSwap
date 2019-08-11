@@ -41,31 +41,114 @@
     <!-- Email js Library -->
     <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
 
+    <script language="JavaScript">
+      function disableCtrlKeyCombination(e) {
+  
+        var forbiddenKeys = new Array("a", "s", "c", "u");
+        var key;
+        var isCtrl;
+
+        if (window.event) {
+          key = window.event.keyCode; 
+          if (window.event.ctrlKey)
+            isCtrl = true;
+          else
+            isCtrl = false;
+        } else {
+          key = e.which; 
+          if (e.ctrlKey)
+            isCtrl = true;
+          else
+            isCtrl = false;
+        }
+
+        if (isCtrl) {
+          for (i = 0; i < forbiddenKeys.length; i++) {
+            
+            if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {                               
+              return false;
+            }
+          }
+        }
+        return true;
+      }
+    </script>
+
+    <script type="text/javascript">
+      var message = "Sorry, right-click has been disabled";
+
+      function clickIE() {
+        if (document.all) {
+          (message);
+          return false;
+        }
+      }
+
+      function clickNS(e) {
+        if (document.layers || (document.getElementById && !document.all)) {
+          if (e.which == 2 || e.which == 3) {
+            (message);
+            return false;
+          }
+        }
+      }
+      if (document.layers) {
+        document.captureEvents(Event.MOUSEDOWN);
+        document.onmousedown = clickNS;
+      } else {
+        document.onmouseup = clickNS;
+        document.oncontextmenu = clickIE;
+      }
+      document.oncontextmenu = new Function("return false")
+    </script>
+
+    <script language="JavaScript">
+      
+      document.onkeypress = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+          
+          return false;
+        }
+      }
+      document.onmousedown = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+          
+          return false;
+        }
+      }
+      document.onkeydown = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+          
+          return false;
+        }
+      }
+      
+    </script>
+
   </head>
 
   <body>
+    <body onkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);"></body>
     <!-- Navbar -->
     <div class="navbar">
       <!-- Logo -->
-      <a href="/" class="navbar-brand">
-        <img src="images/zentaswap_logo.png" alt="logo">
-      </a>
-
+    <a href="index.html" class="hover-target animsition-link"><img src="img/logo.png" alt=""></a>
       <div class="navbar-right hidden-s hidden-sm">
         <div class="navbar-item">
           <div class="dropdown dropdown-toggle" id="navbar-menu" data-toggle="dropdown">
             <ul class="dropdown-menu dropdown-menu-right navbar-dropdown-menu">
               <li><a href="#" id="networkSwitch"><span style="color: rgb (101, 101, 101);">Ropsten Testnet</span></a></li>
             </ul>
-          <span style="color: rgb(62, 62, 62);">Mainnet
+          <span style="color: rgb(255, 255, 255);" font size="16">Mainnet
           </div>
         </div>
       </div>
-
     </div>
 
-    <!-- PAGE CONTENT -->
-
+    <!-- Page -->
     <div class="wrapper">
       <div class="buffer-top">
         <div class="modal" tabindex="-1" role="dialog">
@@ -95,7 +178,7 @@
 
         <!-- Title -->
         <div class="row justify-content-md-center title">
-          <div class="col-md-auto text-center">
+          <div class="col-md-auto text-center text-white" font color="white">
             <h5>TRADE TOKENS WITH ZENTASWAP OVER IPFS</h5>
           </div>
         </div>
@@ -108,42 +191,39 @@
           <div class="row justify-content-md-center">
             <div class="col-md-auto text-center swap-card-content">
               <div class="dropdown" id="sell-card">
-                <div class="sell-title">
+                <div class="sell-title text-white">
                   <h5>FROM</h5>
                 </div>
                 <div class="token-content" id="sell-content">
                   <img class="token-logo" id="sell-logo" onclick="SellFunction()" src="images/ethereum.png" alt="" >
-                  <h6 class="dropbtn" id="sell-button" onclick="SellFunction()">Ethereum - (ETH)</h6>
+                    <h6 class="dropbtn" id="sell-button" onclick="SellFunction()">Ethereum - (ETH)</h6>
                   <div class="max-token" id="sell-max-token"></div>
                   <div id="sellDropdown" class="dropdown-content">
                     <input class="searchFilter"type="text" placeholder="Search.." id="sellSearch">
                   </div>
-
                 </div>
               </div>
             </div>
-
             <div class="col-md-auto text-center swap-image-parent">
-              <img class="swap-image" src="images/swap.png" alt="">
+              <img class="swap-image" src="images/swap.png" alt="zentaswaper">
             </div>
 
             <div class="col-md-auto text-center swap-card-content">
               <div class="dropdown" id="buy-card">
-                <div class="buy-title">
+                <div class="buy-title text-white">
                   <h5>TO</h5>
                 </div>
                 <div class="token-content" id="buy-content">
-                  <img class="token-logo" id="buy-logo" onclick="BuyFunction()" src="https://raw.githubusercontent.com/TrustWallet/tokens/master/tokens/0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359.png" alt="" onerror="this.onerror=null;this.src='images/no-image.png';">
-                  <h6 onclick="BuyFunction()" class="dropbtn" id="buy-button">DAI - (DAI)</h6>
-                  <div class="max-token"></div>
-                  <div id="buyDropdown" class="dropdown-content">
+                  <img class="token-logo" id="buy-logo" onclick="BuyFunction()" src="https://raw.githubusercontent.com/TrustWallet/tokens/master/tokens/0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359.png" alt="trustwallet" onerror="this.onerror=null;this.src='images/no-image.png';">
+                    <h6 onclick="BuyFunction()" class="dropbtn" id="buy-button">DAI - (DAI)</h6>
+                      <div class="max-token"></div>
+                    <div id="buyDropdown" class="dropdown-content">
                     <input class="searchFilter"type="text" placeholder="Search.." id="buySearch">
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
           <!-- FORM TO SUBMIT VALUES -->
 
             <div class="row justify-content-md-center">
@@ -173,9 +253,9 @@
 
             </div>
 
-            <div class="row justify-content-md-center">
+            <div class="row justify-content-md-center text-white">
               <div class="col-md-auto text-center swap-button-div">
-                <input class="btn btn-outline-light" id="swap-button" type="submit" value="SWAP">
+                <input class="btn btn-outline-light text-white" id="swap-button" type="submit" value="SWAP">
                 <h6>Exchange Rate:</h6>
                 <div class="exchange-rate"></div>
 
@@ -190,7 +270,7 @@
         <div class="row justify-content-around credits">
           <div class="col-md-auto text-center">
               <div class="credit-item">
-                <img src="images/ipfs-logo-white.png" alt="ipfs-logo" height="60" width="100">
+                <img src="images/ipfs-logo-white.png" alt="ipfs-logo" height="60" width="120">
 
               </div>
           </div>
@@ -219,9 +299,6 @@
 
       </div>
 
-      <!-- Test END -->
-      </div>
-
       <div class="push"></div>
     </div>
 
@@ -237,7 +314,6 @@
 
     <!-- Trade function -->
     <script language="javascript" type="text/javascript" src="javascript/trade.js"></script>
-
     <script language="javascript" type="text/javascript" src="javascript/modal-changes.js"></script>
 
     <!-- Show available currencies-->
@@ -246,7 +322,6 @@
     <!-- Get Expected Rates -->
     <script language="javascript" type="text/javascript" src="javascript/get-expected-rate.js"></script>
 
-    <!-- Jquery, Popper.js and Bootstrap.js -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
