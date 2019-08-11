@@ -1,7 +1,7 @@
 /* Main navbar */
 .navbar {
-  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 1px 5px 0 rgb(0, 0, 0),0 1px 0 0 rgba(0,0,0,0.03);
+  background: rgb(0, 0, 0);
   transition: all 0.3s ease;
   height: 58px;
   padding: 0px 30px;
@@ -14,7 +14,7 @@
 
 /* Logo */
 .navbar-brand img {
-  height: 60px;
+  height: 40px;
 }
 
 /* User Avatar */
@@ -39,7 +39,7 @@
 
 /* Navbar link */
 .navbar-link {
-  color: #004b69;
+  color: #000000;
   font-size: 14px;
 }
 .navbar-link:hover {
@@ -50,8 +50,8 @@
 /* Dropdown menu */
 .navbar-dropdown-menu {
   margin-top: 150px;
-  box-shadow: 1px 1px 4px rgb(196, 14, 14);
-  border-color: rgb(202, 54, 54);
+  box-shadow: 1px 1px 4px rgb(251, 251, 251);
+  border-color: rgb(255, 255, 255);
 }
 .navbar-dropdown-menu li > a {
   transition: color 0.3s ease;
@@ -75,5 +75,5 @@
   background-color: grey;
   transform: rotate(45deg);
   border-left: 1px solid #E6E6E6;
-  border-top: 1px solid #E6E6E6;
+  border-top: 1px solid rgb(0, 0, 0);
 }
