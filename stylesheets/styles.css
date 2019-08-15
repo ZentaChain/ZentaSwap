@@ -226,3 +226,18 @@ html, body {
   width: 2em;
   height: 2em;
 }
+
+  /*Webkit ScrollBar*/
+::-webkit-scrollbar {
+	width: 20px;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 1px rgb(255, 255, 255);
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 0px;
+	-webkit-box-shadow: inset 0 0 6px rgb(255, 255, 255);
+}
