@@ -27,6 +27,8 @@
 
 - [x] Redesigned &&/Bug fixed 09.08.2019
 
+- [ ] Modal-Bug 13.08.2019
+
 ----
 #### *Prerequisites*
 
@@ -55,5 +57,3 @@ $ npm start
 ##### *NPM - Package manager for JavaScript*
 
 ##### *[Copyright all rights reserved * Zentachain.io 2019]*
-
-##### *Modal-Bug 13.08.2019*
