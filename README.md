@@ -27,7 +27,7 @@
 
 - [x] Redesigned &&/Bug fixed 09.08.2019
 
-- [ ] Modal-Bug 13.08.2019
+- [x] Modal-Bug 16.08.2019
 
 ----
 #### *Prerequisites*
