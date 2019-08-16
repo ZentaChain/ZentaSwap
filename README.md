@@ -5,29 +5,34 @@
 ##### *ZentaSwap is a process by which one cryptocurrency is exchanged for another. Unlike selling one coin to buy another, a token swap* *is the change of one coin for another or token its runs over the IPFS.*
 
 
-- [x] Mobile view
+* *[Go to ZentaSwap](https://www.zentachain.io/zentaswap/)*
 
-- [x] Ropsten Network
 
-- [x] Mainnet Network 
+*- [x] Mobile view*
 
-- [x] Ipfs
+*- [x] Ropsten Network*
 
-- [x] Web3
+*- [x] Mainnet Network* 
 
-- [x] ethers.js
+*- [x] Ipfs*
 
-- [x] inluded Erc20.abis
+*- [x] Web3*
 
-- [x] KyberNetworkProxy
+*- [x] ethers.js*
 
-- [x] Metamask
+*- [x] inluded Erc20.abis*
 
-- [x] dApp
+*- [x] KyberNetworkProxy*
 
-- [x] Redesigned &&/Bug fixed 09.08.2019
+*- [x] Metamask*
 
-- [x] Modal-Bug 16.08.2019
+*- [x] dApp*
+
+*- [x] Redesigned &&/Bug fixed 09.08.2019*
+
+*- [x] Modal-Bug 16.08.2019*
+
+#### *Have a nice Swap :)*
 
 ----
 #### *Prerequisites*
