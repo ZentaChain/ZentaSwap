@@ -67,6 +67,7 @@
   font-size: 12px;
   font-weight: lighter;
   font-style: italic;
+  color: black;
 }
 
 #myInput:focus {outline: 2px solid rgb(255, 254, 254);}
