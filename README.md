@@ -47,14 +47,17 @@ Node.js npm and Metamask
 ```sh
 git clone https://github.com/ZentaChain/ZentaSwap
 ````
-
 install required packages:
 ````sh
 $ npm install
 ````
 run with:
 ````sh
-$ npm start
+$ npm start 
+````
+if npm debug output error try:
+````sh
+index.html
 ````
 
 #### *Built With:*
