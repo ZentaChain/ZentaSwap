@@ -30,7 +30,7 @@
 
 *- [x] Redesigned &&/Bug fixed 09.08.2019*
 
-*- [x] Modal-Bug 16.08.2019*
+*- [x] Modal-Bug fixed 16.08.2019*
 
 #### *Have a nice Swap :)*
 
