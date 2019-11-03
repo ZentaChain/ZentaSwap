@@ -8,31 +8,29 @@
 * *[Go to ZentaSwap](https://www.zentachain.io/zentaswap/)*
 
 
-*- [x] Mobile view*
+- [x] Mobile view
 
-*- [x] Ropsten Network*
+- [x] Ropsten Network
 
-*- [x] Mainnet Network* 
+- [x] Mainnet Network
 
-*- [x] Ipfs*
+- [x] Ipfs
 
-*- [x] Web3*
+- [x] Web3
 
-*- [x] ethers.js*
+- [x] ethers.js
 
-*- [x] inluded Erc20.abis*
+- [x] inluded Erc20.abis
 
-*- [x] KyberNetworkProxy*
+- [x] KyberNetworkProxy
 
-*- [x] Metamask*
+- [x] Metamask
 
-*- [x] dApp*
+- [x] dApp
 
-*- [x] Redesigned &&/Bug fixed 09.08.2019*
+- [x] Redesigned &&/Bug fixed 09.08.2019
 
-*- [x] Modal-Bug fixed 16.08.2019*
-
-#### *Have a nice Swap :)*
+- [x] Modal-Bug fixed 16.08.2019
 
 ----
 #### *Prerequisites*
@@ -64,4 +62,4 @@ index.html
 
 ##### *NPM - Package manager for JavaScript*
 
-##### *[Copyright all rights reserved * Zentachain.io 2019]*
+##### *[Copyright all rights reserved  Zentachain.io 2019]*
