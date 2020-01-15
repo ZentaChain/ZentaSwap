@@ -62,4 +62,4 @@ index.html
 
 ##### *NPM - Package manager for JavaScript*
 
-##### *[Copyright all rights reserved  Zentachain.io 2019]*
+##### *[Copyright all rights reserved  Zentachain.io 2020]*
