@@ -14,7 +14,7 @@
 
 - [x] Mainnet Network
 
-- [x] Ipfs
+- [ ] Ipfs
 
 - [x] Web3
 
