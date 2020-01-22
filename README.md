@@ -14,8 +14,6 @@
 
 - [x] Mainnet Network
 
-- [ ] Ipfs
-
 - [x] Web3
 
 - [x] ethers.js
