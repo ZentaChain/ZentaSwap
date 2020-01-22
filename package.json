@@ -1,7 +1,7 @@
 {
   "name": "ZentaSwap-master",
   "version": "1.0.0",
-  "description": "ZentaSwap IPFS ETHEREUM...",
+  "description": "ZentaSwap",
   "main": "index.js",
   "dependencies": {
     "bootstrap": "^4.3.1",
