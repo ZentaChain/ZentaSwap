@@ -35,7 +35,7 @@
 
 To setup the development environment for the project you will need the following:
 ````
-Node.js npm and Metamask
+Node.js & Metamask
 ````
 #### *Installing:*
 
@@ -51,7 +51,7 @@ run with:
 ````sh
 $ npm start 
 ````
-if npm debug output error try:
+If npm debug output error try run:
 ````sh
 index.html
 ````
