@@ -51,10 +51,6 @@ run with:
 ````sh
 $ npm start 
 ````
-If npm debug output error try run:
-````sh
-index.html
-````
 
 #### *Built With:*
 
