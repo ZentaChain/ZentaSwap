@@ -52,8 +52,4 @@ run with:
 $ npm start 
 ````
 
-#### *Built With:*
-
-##### *NPM - Package manager for JavaScript*
-
 ##### *[Copyright all rights reserved  Zentachain.io 2020]*
