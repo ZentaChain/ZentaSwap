@@ -30,7 +30,6 @@
 
 - [x] Modal-Bug fixed 16.08.2019
 
-----
 #### *Prerequisites*
 
 To setup the development environment for the project you will need the following:
