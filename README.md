@@ -51,4 +51,4 @@ run with:
 $ npm start 
 ````
 
-##### *[Copyright all rights reserved  Zentachain.io 2020]*
+#### [Copyright all rights reserved by Zentachain 2020
