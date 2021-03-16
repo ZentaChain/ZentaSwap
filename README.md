@@ -50,5 +50,3 @@ run with:
 ````sh
 $ npm start 
 ````
-
-#### [Copyright all rights reserved by Zentachain 2020
