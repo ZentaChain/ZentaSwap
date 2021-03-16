@@ -4,10 +4,6 @@
 
 ##### ZentaSwap is a process by which one cryptocurrency is exchanged with another one. Unlike selling one coin to buy another, a token swap is the change of one coin or token with another one running over the IPFS.
 
-
-*[ZentaSwap](https://www.zentachain.io/zentaswap/)*
-
-
 - [x] Mobile view
 
 - [x] Ropsten Network
